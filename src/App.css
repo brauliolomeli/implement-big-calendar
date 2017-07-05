@@ -1,24 +1,48 @@
+html, body, #root{
+  height:100%;
+  color: #999;
+  font-weight: 300;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.calendar-container {
+  height: 100%;
+}
+div.text-event {
+  color: #fff;
+  border-radius: 2px;
+  font-size: 13px;
+  padding: 4px;
+}
+div.text-event.text-event-interview {
+  background-color: #DE2A66;
+}
+div.text-event.text-event-fu {
+  background-color: #6648B6;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* Override other styles */
+div.rbc-day-bg + div.rbc-day-bg {
+    border-left: none;
 }
-
-.App-intro {
-  font-size: large;
+div.rbc-month-view div.rbc-header + div.rbc-header {
+    border-left: none;
+    border-bottom: none;
+    font-weight: 300;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+div.rbc-month-view div.rbc-header {
+    border-bottom: none;
+    font-weight: 300;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+}
+div.rbc-date-cell {
+  text-align: left;
 }

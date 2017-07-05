@@ -1,0 +1,15 @@
+.custom-header {
+    background-color: #5D7EFB;
+    height: 96px;
+    color: #fff;
+    font-size: 19px;
+    padding: 25px 15px;
+    font-weight: 300;
+}
+.custom-header>button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
